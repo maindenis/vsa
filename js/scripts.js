@@ -60,23 +60,6 @@ $(document).ready(function() {
         });
  }
 
-    if($('.vsa_photos').length > 0) {
-     $('.vsa_photos').owlCarousel({
-        loop:true,
-        margin:30,
-        nav:false,
-        autoplay:true,
-        smartSpeed:1000,
-        autoplayTimeout:3000,
-        autoplayHoverPause:true,
-        lazyLoadEager: 3,
-        video: false,
-        dots: false,
-        autoWidth:true,
-        responsiveClass:false,
-    });
-    }
-
     if($('.vsa_items_slider').length > 0) {
      $('.vsa_items_slider').owlCarousel({
         loop:true,
@@ -101,7 +84,25 @@ $(document).ready(function() {
         nav:false,
         autoplay:true,
         smartSpeed:1000,
-        autoplayTimeout:3000,
+        autoplayTimeout:10000,
+        autoplayHoverPause:true,
+        lazyLoadEager: 3,
+        video: false,
+        dots: false,
+        autoWidth:true,
+        responsiveClass:false
+    });
+    }
+
+    if($('.vsa_portfolio_slider_rtl').length > 0) {
+     $('.vsa_portfolio_slider_rtl').owlCarousel({
+        loop:true,
+        margin:10,
+        rtl:true,
+        nav:false,
+        autoplay:true,
+        smartSpeed:1000,
+        autoplayTimeout:10000,
         autoplayHoverPause:true,
         lazyLoadEager: 3,
         video: false,
