@@ -1,0 +1,128 @@
+
+/* to remove slide effect  css */
+.owl-carousel-background {
+      -webkit-animation-duration : 3ms  !important;
+      animation-duration : 3ms  !important;
+      -webkit-animation-fill-mode : both  !important;
+      animation-fill-mode : both  !important;
+	  position: absolute;
+	  display: float;
+	  margin: 0;
+	  padding: 0;
+	  top: 0px;
+	  left: 0px;
+	  transform: scale(1);
+	  z-index: -999;
+}
+
+.owl-carousel-background .item{
+	width: 100vw;
+	height: 100vh;
+	background: #aabbcc;
+	background-position: center !important;
+	/* background-size: cover; */
+	background-size: auto 110% !important;
+}
+
+.owl-carousel-background .item H4{
+	position: absolute;
+	top: 45vh;
+	left: 5vw;
+	font-size: 3em;
+	text-transform: uppercase;
+	color: #bfc5ca;
+	transition: 1s;
+	font-weight: 100;
+	line-height: 0.8;
+	text-shadow: 0 0 0px rgba(168,195,224,0);
+	color: transparent;
+}
+
+.h4_bold {
+	font-weight: 400;
+	font-size: 1.3em;
+}
+
+.owl-carousel-background div.active .item {
+	animation: 5s owl-zoomIn;
+}
+
+.owl-carousel-background div.active .item #title-shift {
+	text-align: right;
+	animation: 6s owl-title-shift;
+}
+
+.owl-carousel-background div.active .item #title-opacity {
+	animation: 6s owl-title-opacity;
+}
+    
+.owlfadeOut  {
+  -webkit-animation-name : owl-fadeOut  ;
+  animation-name : owl-fadeOut  ;
+}
+.owlfadeIn {
+	-webkit-animation-name : owl-fadeIn  ;
+	animation-name : owl-fadeIn  ;	
+}
+
+@-webkit-keyframes  owl-fadeOut  {
+  0% {
+	opacity : 1   ;
+  }  
+  100% {
+	opacity : 0   ;
+  }  
+}
+
+@keyframes  owl-fadeOut  {
+  0% {
+	opacity : 1   ;
+  }  
+  100% {
+	opacity : 0   ;
+  }  
+}
+
+@-webkit-keyframes  owl-fadeIn  {
+  0% {
+	opacity : 0   ;
+  }  
+  100% {
+	opacity : 1   ;
+  }  
+}	
+
+@keyframes  owl-fadeIn  {
+  0% {
+	opacity : 0   ;
+  }  
+  100% {
+	opacity : 1   ;
+  }  
+}
+
+@keyframes owl-zoomIn {
+	10% {
+		transform: scale(1.0);
+	}
+	85% {
+		transform: scale(1.05);
+	}
+	100% { 
+		transform: scale(1.0);
+	}
+}
+
+@keyframes owl-title-shift {
+	0%		{ left: 2vw; letter-spacing: normal;			}
+/*	20%		{ text-shadow: 0 0 0px rgba(168,195,224,1);		} */
+	20%		{ text-shadow: 0 0 0px rgba(255,255,255,1);		} 
+	100% 	{ left: 10vw; letter-spacing: 1px; text-shadow: 0 0 10px rgb(255,255,255,0);}
+}
+
+@keyframes owl-title-opacity {
+	0%		{ left: 5vw; letter-spacing: 1px;			}
+/*	20%		{ text-shadow: 0 0 0px rgba(168,195,224,1);	} */
+	20%		{ text-shadow: 0 0 0px rgba(255,255,255,1);	}
+	100%	{ left: 3vw; letter-spacing: 3px; text-shadow: 0 0 10px rgb(255,255,255,0);	}
+}
