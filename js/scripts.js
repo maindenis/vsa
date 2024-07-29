@@ -1,3 +1,8 @@
+function getAnimate() {
+    $("#vsaHeader").addClass("animate");
+    $(".vsa_promo_bottom_row").addClass("animate");
+}
+
 var w = window,
 d = document,
 e = d.documentElement,
@@ -13,6 +18,8 @@ $(document).scroll(function() {
 });
 
 $(document).ready(function() {
+    getAnimate();
+    // -----------
     if($('.owl-carousel-background').length > 0) {
         $('.owl-carousel-background').owlCarousel({
             loop:true, //Зацикливаем слайдер
@@ -59,6 +66,29 @@ $(document).ready(function() {
             }
         });
  }
+
+    if($('.vsa_promo_slider').length > 0) {
+     $('.vsa_promo_slider').owlCarousel({
+        loop:true,
+        margin:0,
+        nav:false,
+        autoplay:true,
+        smartSpeed:1000,
+        autoplayTimeout:15000,
+        autoplayHoverPause:false,
+        lazyLoadEager: 1,
+        video: false,
+        dots: false,
+        autoWidth:false,
+        responsiveClass:false,
+        animateIn: 'fadeIn',
+        animateOut: 'fadeOut',
+        items: 1,
+        mouseDrag: false,
+        touchDrag: false,
+        singleItem: true
+    });
+    }
 
     if($('.vsa_items_slider').length > 0) {
      $('.vsa_items_slider').owlCarousel({
@@ -111,6 +141,15 @@ $(document).ready(function() {
         responsiveClass:false
     });
     }
+
+    // -------------
+
+    $(".vsa_scroll_down").on("click", function(e) {
+        e.preventDefault();
+        $('html, body').stop().animate({
+          'scrollTop': $(window).height() + "px"
+        }, 1000);
+    });
 
     // --------------
 
