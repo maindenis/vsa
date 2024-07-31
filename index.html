@@ -7,18 +7,20 @@
 	<meta name="description" content="">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">	
-	<title></title>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<title>VSA</title>
 </head>
 <body>
 	<div class="wrapper">
 	<!-- Header -->		
-	<header id="vsaHeader">
+	<header id="vsaHeader" class="animate">
 		<div class="vsa_row">
 			<div class="vsa_header_site">
 				<div>
 					<a href="#" class="vsa_logo">
-						<img src="img/white_logo.svg" alt="" />
+						<img src="img/white_logo.svg" alt="" loading="lazy" />
+					</a>
+					<a href="#" class="vsa_logo scroll">
+						<img src="img/footer_logo.svg" alt="" loading="lazy" />
 					</a>
 				</div>
 				<div>
@@ -29,10 +31,49 @@
 							<li><a href="#">контакты</a></li>
 						</ul>
 					</div>
+					<div class="resp_inline">
+						<div>
+							<ul class="vsa_lang_nav resp_vsa_lang_nav">
+								<li><a href="#" class="active">RU</a></li>
+								<li><a href="#">EN</a></li>
+							</ul>
+						</div>
+						<div>
+							<button type="button" class="resp_btn">
+								<span></span>
+								<span></span>
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</header>
+	<!-- Resp Nav -->
+	<div class="respNavBox">
+		<div class="resNavHeight">
+			<div class="resNavList">
+				<button type="button" class="closeNav">
+					<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<line x1="0.484714" y1="0.498064" x2="18.4682" y2="17.8645" stroke="black" stroke-width="1.39555"/>
+						<line y1="-0.697773" x2="25" y2="-0.697773" transform="matrix(-0.71934 0.694658 0.694658 0.71934 19 1)" stroke="black" stroke-width="1.39555"/>
+					</svg>
+				</button>
+				<ul class="smartNav">
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Портфолио</a></li>
+					<li><a href="#">цены</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">организация работ</a></li>
+				</ul>
+			</div>
+			<div>
+				<a href="#" class="vsa_black_pill">Оставить заявку</a>
+			</div>
+		</div>
+	</div>
+	<!-- /Resp Nav -->
 	<!-- /Header -->
 	<!-- Content -->
 	<div class="content">
@@ -50,7 +91,8 @@
 		<div class="vsa_promo_slider owl-carousel">
 			<div>
 				<div class="vsa_promo_slide">
-					<img class="vsa_promo_slide_bg" src="img/promo.jpg" alt="" />
+					<img class="vsa_promo_slide_bg" src="img/promo.jpg" alt="" loading="lazy" />
+					<img class="vsa_promo_slide_bg_resp" src="img/promo_resp.jpg" alt="" loading="lazy" />
 					<div class="vsa_row z_2">
 						<div>
 							<div class="vsa_promo_slide_contant">
@@ -64,13 +106,19 @@
 									<a href="#" class="vsa_tr_pill">смотреть портфолио</a>
 								</div>
 							</div>
+							<div class="vsa_btns_wrapp_resp">
+								<div>
+									<a href="#" class="vsa_black_pill">заказать проект</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div>
 				<div class="vsa_promo_slide">
-					<img class="vsa_promo_slide_bg" src="img/promo.jpg" alt="" />
+					<img class="vsa_promo_slide_bg" src="img/promo.jpg" alt="" loading="lazy" />
+					<img class="vsa_promo_slide_bg_resp" src="img/promo_resp.jpg" alt="" loading="lazy" />
 					<div class="vsa_row z_3">
 						<div>
 							<div class="vsa_promo_slide_contant">
@@ -84,13 +132,19 @@
 									<a href="#" class="vsa_tr_pill">смотреть портфолио</a>
 								</div>
 							</div>
+							<div class="vsa_btns_wrapp_resp">
+								<div>
+									<a href="#" class="vsa_black_pill">заказать проект</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div>
 				<div class="vsa_promo_slide">
-					<img class="vsa_promo_slide_bg" src="img/promo.jpg" alt="" />
+					<img class="vsa_promo_slide_bg" src="img/promo.jpg" alt="" loading="lazy" />
+					<img class="vsa_promo_slide_bg_resp" src="img/promo_resp.jpg" alt="" loading="lazy" />
 					<div class="vsa_row z_3">
 						<div>
 							<div class="vsa_promo_slide_contant">
@@ -102,6 +156,11 @@
 								</div>
 								<div>
 									<a href="#" class="vsa_tr_pill">смотреть портфолио</a>
+								</div>
+							</div>
+							<div class="vsa_btns_wrapp_resp">
+								<div>
+									<a href="#" class="vsa_black_pill">заказать проект</a>
 								</div>
 							</div>
 						</div>
@@ -174,7 +233,7 @@
 				</div>
 				<div>
 					<div class="vsa_img_box">
-						<img src="img/img_01.jpg" alt="" />
+						<img src="img/img_01.jpg" alt="" loading="lazy" />
 					</div>
 				</div>
 				<div>
@@ -186,7 +245,7 @@
 							<div class="vsa_rev_thumbs">
 								<div class="vsa_rev_thumb">
 									<div class="vsa_rev_thumb_logo">
-										<img src="img/logo_01.svg" alt="" />
+										<img src="img/logo_01.svg" alt="" loading="lazy" />
 									</div>
 									<div class="vsa_rev_thumb_title">
 										<h3>Средний балл</h3>
@@ -211,7 +270,7 @@
 								</div>
 								<div class="vsa_rev_thumb">
 									<div class="vsa_rev_thumb_logo">
-										<img src="img/logo_01.svg" alt="" />
+										<img src="img/logo_02.svg" alt="" loading="lazy" />
 									</div>
 									<div class="vsa_rev_thumb_title">
 										<h3>Средний балл</h3>
@@ -239,6 +298,9 @@
 					</div>
 				</div>
 			</div>
+			<div class="resp_btn_wrapp">
+				<a href="#" class="vsa_tr_pill">читать отзывы</a>
+			</div>
 			<div class="vsa_photos_box">
 				<div class="vsa_h2_wrapp">
 					<h3>[ что делаем ]</h3>
@@ -246,7 +308,7 @@
 				<div class="vsa_photos">
 					<div>
 						<a href="#" class="vsa_photo_thumb">
-							<img src="img/img_02.jpg" alt="" />
+							<img src="img/img_02.jpg" alt="" loading="lazy" />
 							<h3>Дизайн квартир</h3>
 							<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M34 4.24835H31.3541V29.5002L4.52451 2.66018L1.86537 0L0 1.87933L2.65914 4.53951L29.4755 31.3531H4.24669L4.24669 34H34V4.24835Z" fill="white"/>
@@ -255,7 +317,7 @@
 					</div>
 					<div>
 						<a href="#" class="vsa_photo_thumb">
-							<img src="img/img_03.jpg" alt="" />
+							<img src="img/img_03.jpg" alt="" loading="lazy" />
 							<h3>Коммерческие<br /> интерьеры</h3>
 							<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M34 4.24835H31.3541V29.5002L4.52451 2.66018L1.86537 0L0 1.87933L2.65914 4.53951L29.4755 31.3531H4.24669L4.24669 34H34V4.24835Z" fill="white"/>
@@ -264,7 +326,7 @@
 					</div>
 					<div>
 						<a href="#" class="vsa_photo_thumb">
-							<img src="img/img_04.jpg" alt="" />
+							<img src="img/img_04.jpg" alt="" loading="lazy" />
 							<h3>Архитектура</h3>
 							<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M34 4.24835H31.3541V29.5002L4.52451 2.66018L1.86537 0L0 1.87933L2.65914 4.53951L29.4755 31.3531H4.24669L4.24669 34H34V4.24835Z" fill="white"/>
@@ -290,7 +352,7 @@
 						</div>
 					</div>
 					<div>
-						<h3>Нас много</h3>
+						<h3><span>01. </span>Нас много</h3>
 					</div>
 					<div>
 						<p>В отличии от фрилансеров и небольших коллективов над одним проектом всегда работает группа специалистов: дизайнер, проджект-менеджер, комплектатор, специалист авторского надзора</p>
@@ -303,7 +365,7 @@
 						</div>
 					</div>
 					<div>
-						<h3>Мы на связи</h3>
+						<h3><span>02. </span>Мы на связи</h3>
 					</div>
 					<div>
 						<p>В отличии от крупных архитектурных бюро руководители студии сами принимают непосредственное участие в работе: находятся в рабочих чатах, встречаются с клиентами</p>
@@ -316,7 +378,7 @@
 						</div>
 					</div>
 					<div>
-						<h3>Управление проектом</h3>
+						<h3><span>03. </span>Управление проектом</h3>
 					</div>
 					<div>
 						<p>Мы выполняем менеджемент проекта: планируем работы и сроки, строим дорожную карту, увязываем всех участников процесса. Проектный менеджер всегда может дать отчёт по текущим вопросам</p>
@@ -329,7 +391,7 @@
 						</div>
 					</div>
 					<div>
-						<h3>Инженерия в одних руках</h3>
+						<h3><span>04. </span>Инженерия в одних руках</h3>
 					</div>
 					<div>
 						<p>Мы сами разрабатываем инженерные системы и увязываем решения с дизайн-проектом. Таким образом снижается риск возникновения ошибок в процессе реализации</p>
@@ -342,7 +404,7 @@
 						</div>
 					</div>
 					<div>
-						<h3>Прозрачная политика</h3>
+						<h3><span>05. </span>Прозрачная политика</h3>
 					</div>
 					<div>
 						<p>Прозрачный процесс комплектации и понятная политика оплаты. Все товары собираются в единой таблице, в ней же происходит финансовое планирование реализации проекта</p>
@@ -355,7 +417,7 @@
 						</div>
 					</div>
 					<div>
-						<h3>Экспертность</h3>
+						<h3><span>06. </span>Экспертность</h3>
 					</div>
 					<div>
 						<p>Нами наработан многолетний опыт работы в сфере реализации интерьеров и загородного строительства, и мы всегда доводим проект до конца</p>
@@ -368,7 +430,8 @@
 	<!-- Section 4 - Main -->
 	<section class="sect_4_main">
 		<div class="avs_article_2">
-			<img class="avs_article_2_bg" src="img/article_2.jpg" alt="" />
+			<img class="avs_article_2_bg" src="img/article_2.jpg" alt="" loading="lazy" />
+			<img class="avs_article_2_bg_resp" src="img/article_2_resp.jpg" alt="" loading="lazy" />
 			<div class="vsa_row">
 				<div class="vsa_article_2_content">
 					<h2>Как организована работа?</h2>
@@ -390,7 +453,7 @@
 			<div class="vsa_items_slider owl-carousel">
 				<div>
 					<div class="vsa_item_thumb">
-						<img class="vsa_item_thumb_bg" src="img/shape_01.svg" alt="" />
+						<img class="vsa_item_thumb_bg" src="img/shape_01.svg" alt="" loading="lazy" />
 						<div class="vsa_item_thumb_header">
 							<div>
 								<h3>Если вы купили новую квартиру</h3>
@@ -406,7 +469,7 @@
 				</div>
 				<div>
 					<div class="vsa_item_thumb">
-						<img class="vsa_item_thumb_bg" src="img/shape_02.svg" alt="" />
+						<img class="vsa_item_thumb_bg" src="img/shape_02.svg" alt="" loading="lazy" />
 						<div class="vsa_item_thumb_header">
 							<div>
 								<h3>Если вам нужны идеи</h3>
@@ -422,7 +485,7 @@
 				</div>
 				<div>
 					<div class="vsa_item_thumb">
-						<img class="vsa_item_thumb_bg" src="img/shape_03.svg" alt="" />
+						<img class="vsa_item_thumb_bg" src="img/shape_03.svg" alt="" loading="lazy" />
 						<div class="vsa_item_thumb_header">
 							<div>
 								<h3>Если у вас старая квартира</h3>
@@ -438,7 +501,7 @@
 				</div>
 				<div>
 					<div class="vsa_item_thumb">
-						<img class="vsa_item_thumb_bg" src="img/shape_04.svg" alt="" />
+						<img class="vsa_item_thumb_bg" src="img/shape_04.svg" alt="" loading="lazy" />
 						<div class="vsa_item_thumb_header">
 							<div>
 								<h3>Если у вас есть участок</h3>
@@ -454,7 +517,7 @@
 				</div>
 				<div>
 					<div class="vsa_item_thumb">
-						<img class="vsa_item_thumb_bg" src="img/shape_05.svg" alt="" />
+						<img class="vsa_item_thumb_bg" src="img/shape_05.svg" alt="" loading="lazy" />
 						<div class="vsa_item_thumb_header">
 							<div>
 								<h3>Если вы инвестор</h3>
@@ -489,64 +552,64 @@
 		<div class="vsa_portfolio_slider owl-carousel">
 			<div>
 				<a href="#" class="vsa_portfolio_photo">
-					<img src="img/slider/1.jpg" alt="" />
+					<img src="img/slider/1.jpg" alt="" loading="lazy" />
 				</a>
 			</div>
 			<div>
 				<a href="#" class="vsa_portfolio_photo">
-					<img src="img/slider/2.jpg" alt="" />
+					<img src="img/slider/2.jpg" alt="" loading="lazy" />
 				</a>
 			</div>
 			<div>
 				<a href="#" class="vsa_portfolio_photo">
-					<img src="img/slider/3.jpg" alt="" />
+					<img src="img/slider/3.jpg" alt="" loading="lazy" />
 				</a>
 			</div>
 			<div>
 				<a href="#" class="vsa_portfolio_photo">
-					<img src="img/slider/4.jpg" alt="" />
+					<img src="img/slider/4.jpg" alt="" loading="lazy" />
 				</a>
 			</div>
 			<div>
 				<a href="#" class="vsa_portfolio_photo">
-					<img src="img/slider/5.jpg" alt="" />
+					<img src="img/slider/5.jpg" alt="" loading="lazy" />
 				</a>
 			</div>
 			<div>
 				<a href="#" class="vsa_portfolio_photo">
-					<img src="img/slider/6.jpg" alt="" />
+					<img src="img/slider/6.jpg" alt="" loading="lazy" />
 				</a>
 			</div>
 		</div>
 		<div class="vsa_portfolio_slider_rtl owl-carousel">
 			<div>
 				<a href="#" class="vsa_portfolio_photo">
-					<img src="img/slider/7.jpg" alt="" />
+					<img src="img/slider/7.jpg" alt="" loading="lazy" />
 				</a>
 			</div>
 			<div>
 				<a href="#" class="vsa_portfolio_photo">
-					<img src="img/slider/8.jpg" alt="" />
+					<img src="img/slider/8.jpg" alt="" loading="lazy" />
 				</a>
 			</div>
 			<div>
 				<a href="#" class="vsa_portfolio_photo">
-					<img src="img/slider/9.jpg" alt="" />
+					<img src="img/slider/9.jpg" alt="" loading="lazy" />
 				</a>
 			</div>
 			<div>
 				<a href="#" class="vsa_portfolio_photo">
-					<img src="img/slider/10.jpg" alt="" />
+					<img src="img/slider/10.jpg" alt="" loading="lazy" />
 				</a>
 			</div>
 			<div>
 				<a href="#" class="vsa_portfolio_photo">
-					<img src="img/slider/11.jpg" alt="" />
+					<img src="img/slider/11.jpg" alt="" loading="lazy" />
 				</a>
 			</div>
 			<div>
 				<a href="#" class="vsa_portfolio_photo">
-					<img src="img/slider/12.jpg" alt="" />
+					<img src="img/slider/12.jpg" alt="" loading="lazy" />
 				</a>
 			</div>
 		</div>
@@ -555,7 +618,7 @@
 	<!-- Section 6 - Main -->
 	<section class="sect_6_main">
 		<div class="vsa_row">
-			<div class="vsa_h2_wrapp">
+			<div class="vsa_h2_wrapp vsa_h2_wrapp_2">
 				<h2>Сколько стоит</h2>
 				<p>Стоимость работ зависит от многих факторов, таких<br /> как размер объекта, требуемый срок, или состав проекта,<br /> но порядок цен ориентировочно такой:</p>
 			</div>
@@ -663,7 +726,8 @@
 	<section class="sect_7_main">
 		<div class="vsa_row">
 			<div class="vsa_contacts_box">
-				<img class="vsa_contacts_box_bg" src="img/contacts_bg.jpg" alt="" />
+				<img class="vsa_contacts_box_bg" src="img/contacts_bg.jpg" alt="" loading="lazy" />
+				<img class="vsa_contacts_box_bg_resp" src="img/contacts_bg_resp.jpg" alt="" loading="lazy" />
 				<div class="vsa_contacts_form_box">
 					<div class="vsa_contacts_form_title">
 						<h3>Остались вопросы?</h3>
@@ -677,7 +741,7 @@
 							<input type="tel" placeholder="Номер телефона" name="tel" />
 						</div>
 						<div class="vsa_contacts_form_text">
-							<p>Нажимая кнопку вы даёте своё согласие на обработку персональных данных и принимаете политику конфиденциальности</p>
+							<p>Нажимая кнопку вы даёте своё согласие на обработку <a href="#">персональных данных</a> и <a href="#">принимаете политику конфиденциальности</a></p>
 						</div>
 						<div class="vsa_submit_wrapp">
 							<button type="submit" class="vsa_black_pill">отправить</button>
@@ -693,7 +757,7 @@
 					<div>
 						<div class="vsa_news_thumb">
 							<a href="#" class="vsa_news_img_box">
-								<img src="img/img_05.jpg" alt="" />
+								<img src="img/img_05.jpg" alt="" loading="lazy" />
 							</a>
 							<div class="vsa_news_thumb_content">
 								<h3>АНОНС ТВ-проекта</h3>
@@ -712,7 +776,7 @@
 					<div>
 						<div class="vsa_news_thumb">
 							<a href="#" class="vsa_news_img_box">
-								<img src="img/img_06.jpg" alt="" />
+								<img src="img/img_06.jpg" alt="" loading="lazy" />
 							</a>
 							<div class="vsa_news_thumb_content">
 								<h3>LUCE | Интерьеры мест общего пользования</h3>
@@ -731,7 +795,7 @@
 					<div>
 						<div class="vsa_news_thumb">
 							<a href="#" class="vsa_news_img_box">
-								<img src="img/img_07.jpg" alt="" />
+								<img src="img/img_07.jpg" alt="" loading="lazy" />
 							</a>
 							<div class="vsa_news_thumb_content">
 								<h3>РЕКА | Промо-ролик</h3>
@@ -760,8 +824,11 @@
 			<div class="vsa_footer_top_row">
 				<div>
 					<a href="#" class="vsa_footer_logo">
-						<img src="img/footer_logo.svg" alt="" />
+						<img src="img/footer_logo.svg" alt="" loading="lazy" />
 					</a>
+					<div class="vsa_footer_img_resp">
+						<img src="img/footer_img_resp.svg" alt="" loading="lazy" />
+					</div>
 				</div>
 				<div>
 					<ul class="vsa_footer_nav">
@@ -775,7 +842,7 @@
 				</div>
 			</div>
 			<div class="vsa_footer_img">
-				<img src="img/footer_img.svg" alt="" />
+				<img src="img/footer_img.svg" alt="" loading="lazy" />
 			</div>
 			<div class="vsa_footer_two_cols">
 				<div>
@@ -783,6 +850,37 @@
 						<p>Москва, ул. Нижняя Сыромятническая 11 корпус 2, офис 501</p>
 						<p><a href="tel:+7499403-19-85">+7 499 403-19-85</a></p>
 						<p><a href=mailto:hello@vsa.studio>hello@vsa.studio</a></p>
+					</div>
+					<div class="vsa_footer_contacts_resp">
+						<div class="vsa_footer_contacts_item">
+							<div>
+								<h3>контакты</h3>
+							</div>
+							<div>
+								<div>
+									<p>Москва, ул.Нижняя<br /> Сыромятническая 11<br /> корпус 2, офис 501</p>
+								</div>
+								<div>
+									<p><a href="tel:+74994031985">+ 7 (499) 403-19-85</a></p>
+								</div>
+								<div>
+									<p><a href="mailto:hello@vsa.studio">hello@vsa.studio</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="vsa_footer_contacts_item">
+							<div>
+								<h3>соцсети</h3>
+							</div>
+							<div>
+								<div>
+									<p><a href="#">youtube</a></p>
+								</div>
+								<div>
+									<p><a href="#">vkontakte</a></p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div>

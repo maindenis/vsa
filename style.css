@@ -368,6 +368,7 @@ textarea:focus {
 .vsa_row {
     width: 100%;
     max-width: 1820px;
+    min-width: 340px;
     margin: 0 auto;
     padding: 0 25px;
 }
@@ -395,7 +396,6 @@ textarea:focus {
 #vsaHeader {
     width: 100%;
     position: absolute;
-/*    top: 0;*/
     left: 0;
     z-index: 4;
     top: -100px;
@@ -458,10 +458,6 @@ textarea:focus {
     max-width: 100%;
 }
 
-#respNav {
-
-}
-
 .vsa_resp_nav {
     display: flex;
     flex-wrap: wrap;
@@ -507,96 +503,13 @@ textarea:focus {
     border-bottom: 1px solid #fff;
 }
 
-/* ----- Responsive Menu Button ------ */
-
-.respmenubtn {
-    /*display: inline-block;*/
-    display: none;
-    vertical-align: top;
-    width: 26px;
-    height: 26px;
-    background: transparent;
-    cursor: pointer;
-    position: relative;
-    top: 12px;
-    z-index: 11;
-    border: 1px solid transparent;
-    margin-left: 10px;
-}
-
-.respmenubtn span {
-    display: block;
-    width: 24px;
-    height: 2px;
-    background: #1565C0;
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
-    margin: 0 auto 6px auto;
-    -webkit-transition-property: transform, border, background;
-    -webkit-transition-duration: .3s;
-    -webkit-transition-timing-function: ease;
-
-    -moz-transition-property: transform, border, background;
-    -moz-transition-duration: .3s;
-    -moz-transition-timing-function: ease;
-
-    -ms-transition-property: transform, border, background;
-    -ms-transition-duration: .3s;
-    -ms-transition-timing-function: ease;
-
-    -o-transition-property: transform, border, background;
-    -o-transition-duration: .3s;
-    -o-transition-timing-function: ease;
-
-    transition-property: transform, border, background;
-    transition-duration: .3s;
-    transition-timing-function: ease;
-}
-
-.respmenubtn span:last-child {
-    margin: 0 auto;
-}
-
-.respmenubtn:active {
-    -webkit-tap-highlight-color: rgba(0,0,0,0); 
-    -webkit-tap-highlight-color: transparent;
-}
-
-.respmenubtn:hover span {
-    background: #FD8C04;
-}
-
-.respmenubtn.active span {
-    position: relative;
-    width: 30px;
-    top: 0;
-    left: -2px;
-    background: #FD8C04;
-}
-
-.respmenubtn.active span:last-child {
+.resp_inline {
     display: none;
 }
 
-.respmenubtn.active span:first-child {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    margin: 3px 0 0 0;
-    position: relative;
-    top: 2px;
-    left: -2px;
+.vsa_logo.scroll {
+    display: none;
 }
-
-.respmenubtn.active span:nth-child(2) {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}
-
-/* ----- / Responsive Menu Button ------ */
 
 /*-------------------------------------------*/
 /* ----- CONTENT ------ */
@@ -605,7 +518,7 @@ textarea:focus {
 /*-- Section 1 - Promo --*/
 
 .vsa_promo {
-    height: 100vh;
+    min-height: 100vh;
     margin: -1px 0;
     padding: 1px 0;
     background: #000;
@@ -736,6 +649,10 @@ textarea:focus {
 
 .owl-item.active .vsa_promo_slide_bg {
     transform: scale(1.2);
+}
+
+.vsa_promo_slide_bg_resp {
+    display: none !important
 }
 
 .z_2 {
@@ -995,16 +912,16 @@ textarea:focus {
     cursor: pointer;
 }
 
+.vsa_btns_wrapp_resp {
+    display: none;
+}
+
 /*-- /Section 1 - Promo --*/
 
 /*-- Section 2 - Promo --*/
 
 .sect_2_main {
     padding-top: 93px;
-}
-
-.vsa_h2_wrapp {
-
 }
 
 .vsa_h2_wrapp h3 {
@@ -1086,6 +1003,7 @@ textarea:focus {
     max-width: 406px;
     min-height: 52px;
     background: #000;
+    border: none;
     font-family: 'Inter';
     font-weight: 500;
     font-size: 20px;
@@ -1121,10 +1039,6 @@ textarea:focus {
 
 .vsa_left_article_content .vsa_black_pill {
     margin-top: 45px;
-}
-
-.vsa_left_article_footer {
-
 }
 
 .vsa_thumbs {
@@ -1240,10 +1154,6 @@ textarea:focus {
     color: #000;
 }
 
-.vsa_rev_thumb_val {
-
-}
-
 .vsa_rev_thumb_val p {
     font-family: 'Inter';
     font-weight: 700;
@@ -1293,12 +1203,12 @@ textarea:focus {
     color: #B0B0B0;
 }
 
-.vsa_photos_box {
-    border-top: 2px solid #4E4E4E;
+.resp_btn_wrapp {
+    display: none;
 }
 
-.vsa_h2_wrapp {
-
+.vsa_photos_box {
+    border-top: 2px solid #4E4E4E;
 }
 
 .vsa_photos {
@@ -1417,10 +1327,6 @@ textarea:focus {
     padding: 10px 20px 10px 10px;
 }
 
-.vsa_item_num {
-
-}
-
 .vsa_item_num p {
     font-family: 'Inter';
     font-weight: 400;
@@ -1441,6 +1347,10 @@ textarea:focus {
     color: #000;
 }
 
+.vsa_item h3 span {
+    display: none;
+}
+
 .vsa_item > div:nth-child(3) p {
     font-family: 'Inter';
     font-weight: 400;
@@ -1454,15 +1364,11 @@ textarea:focus {
 
 /*-- Section 4 - Main --*/
 
-.sect_4_main {
-
-}
-
 .avs_article_2 {
-    padding: 181px 0 194px 11%;
-/*    background-image: url(img/article_2.jpg);
-    background-position: center;
-    background-size: cover;*/
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    padding: 81px 0 94px 11%;
     overflow: hidden;
     position: relative;
 }
@@ -1475,6 +1381,10 @@ textarea:focus {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.avs_article_2_bg_resp {
+    display: none;
 }
 
 .avs_article_2 > .vsa_row {
@@ -1682,11 +1592,6 @@ textarea:focus {
     margin: 10px 0;
 }
 
-/*.vsa_portfolio_slider:nth-child(2) {
-    width: calc(100% + 273px);
-    margin-left: -273px;
-}*/
-
 .vsa_portfolio_photo {
     display: block;
     height: 427px;
@@ -1731,10 +1636,6 @@ textarea:focus {
 
 .sect_6_main {
     padding: 36px 0 20px 0;
-}
-
-.vsa_h2_wrapp {
-
 }
 
 .vsa_h2_wrapp p {
@@ -1803,10 +1704,6 @@ textarea:focus {
     text-align: right;
 }
 
-.vsa_price_text {
-
-}
-
 .vsa_price_text h3 {
     padding-bottom: 15px;
     font-family: 'Inter';
@@ -1863,9 +1760,6 @@ textarea:focus {
 /*-- Section 7 - Main --*/
 
 .vsa_contacts_box {
-/*    background-image: url(img/contacts_bg.jpg);
-    background-position: center;
-    background-size: cover;*/
     margin: 24px 0 54px 0;
     padding: 100px 125px 100px 125px;
     position: relative;
@@ -1880,6 +1774,10 @@ textarea:focus {
     top: 0;
     left: 0;
     object-fit: cover;
+}
+
+.vsa_contacts_box_bg_resp {
+    display: none;
 }
 
 .vsa_contacts_form_box {
@@ -1913,10 +1811,6 @@ textarea:focus {
     color: #4E4E4E;
 }
 
-.vsa_input_wrapp {
-
-}
-
 .vsa_input_wrapp input {
     display: block;
     width: 100%;
@@ -1928,7 +1822,7 @@ textarea:focus {
     font-family: 'Inter';
     font-weight: 400;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 67px;
     letter-spacing: -0.04em;
     color: #B0B0B0;
 }
@@ -1950,8 +1844,31 @@ textarea:focus {
     color: #B0B0B0;
 }
 
-.vsa_submit_wrapp {
+.vsa_contacts_form_text p a {
+    color: #000;
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
 
+    -moz-transition-property: color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.vsa_contacts_form_text p a:hover {
+    color: #B0B0B0;
 }
 
 .vsa_submit_wrapp .vsa_black_pill {
@@ -1971,10 +1888,6 @@ textarea:focus {
 .vsa_newx_thumbs > div {
     width: 33.33%;
     padding: 15px;
-}
-
-.vsa_news_thumb {
-
 }
 
 .vsa_news_img_box {
@@ -2036,19 +1949,11 @@ textarea:focus {
     color: #4E4E4E;
 }
 
-.vsa_news_thumb .vsa_more_link {
-
-}
-
 /*-- /Section 7 - Main --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
 /*-------------------------------------------*/
-
-footer {
-
-}
 
 .footer_section {
     border: 2px solid #000;
@@ -2153,10 +2058,6 @@ footer {
     padding: 10px 0 10px 10px;
 }
 
-.vsa_text_box {
-
-}
-
 .vsa_text_box p {
     padding: 10px 0;
     font-family: 'Inter';
@@ -2200,14 +2101,6 @@ footer {
 
 .vsa_text_box p a:hover {
     border-bottom: 1px solid #000;
-}
-
-.vsa_subscribe_box {
-
-}
-
-.vsa_subscribe_desc {
-
 }
 
 .vsa_subscribe_desc p {
@@ -2269,4 +2162,12 @@ footer {
     letter-spacing: -0.04em;
     text-transform: uppercase;
     color: #000;
+}
+
+.vsa_footer_img_resp {
+    display: none;
+}
+
+.vsa_footer_contacts_resp {
+    display: none;
 }
