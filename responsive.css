@@ -14,6 +14,44 @@
 
 }
 
+@media only screen and (max-width: 1500px) {
+
+/*-- Section 2 - Main --*/
+
+.vsa_rev_thumb {
+    display: flex;
+    width: 100%;
+}
+
+.vsa_rev_thumb > div:nth-child(1) {
+    width: 110px;
+}
+
+.vsa_rev_thumb > div:nth-child(2) {
+    width: calc(100% - 110px);
+}
+
+/*-- /Section 2 - Main --*/
+
+}
+
+@media only screen and (max-width: 1450px) {
+
+/*-- Section 2 - Main --*/
+
+.vsa_thumb h3 {
+    font-size: 36px;
+    line-height: 38px;
+}
+
+.vsa_thumb p {
+    font-size: 12px;
+}
+
+/*-- /Section 2 - Main --*/
+
+}
+
 @media only screen and (max-width: 1300px) {
 
 /*-- Section 1 - Promo --*/
@@ -39,6 +77,12 @@
     top: -47px;
 }
 
+@keyframes jump {
+  0% {top: -40px;}
+  50% {top: -20px;}
+  100% {top: -40px;}
+}
+
 /*-- /Section 1 - Promo --*/
 
 /*-- Section 2 - Main --*/
@@ -52,13 +96,8 @@
     line-height: 49px;
 }
 
-.vsa_thumb h3 {
-    font-size: 36px;
-    line-height: 38px;
-}
-
-.vsa_thumb p {
-    font-size: 12px;
+.vsa_thumbs > div {
+    padding: 18px 7px;
 }
 
 .vsa_photo_thumb {
@@ -146,6 +185,34 @@
 }
 
 /*-- /Section 5 - Main --*/
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+/*-- Section 2 - Main --*/
+
+.vsa_rev_thumb {
+    padding: 12px 10px 14px 15px;
+}
+
+.vsa_rev_thumb_footer {
+    position: relative;
+}
+
+.vsa_rev_thumb_footer > div:nth-child(2) {
+    width: 100%;
+    padding-left: 40px;
+    position: absolute;
+    top: -31px;
+    right: 0;
+}
+
+.vsa_rev_thumb_footer > div:nth-child(2) p {
+    text-align: right;
+}
+
+/*-- /Section 2 - Main --*/
 
 }
 
@@ -385,6 +452,14 @@
 .vsa_photo_thumb h3 {
     font-size: 18px;
     line-height: 21px;
+}
+
+.vsa_rev_thumb_footer > div:nth-child(2) {
+     width: calc(100% - 95px);
+     padding-left: 0;
+     position: relative;
+     top: 0;
+     right: 0; 
 }
 
 /*-- /Section 2 - Main --*/
@@ -721,7 +796,7 @@
 }
 
 .smartNav li a {
-    font-family: 'Inter';
+    font-family: 'Panton';
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
@@ -858,6 +933,19 @@
 
 .vsa_right_article {
     max-width: 100%;
+}
+
+.vsa_rev_thumb {
+    display: block;
+    width: 200px;
+}
+
+.vsa_rev_thumb > div:nth-child(1) {
+    width: 100%;
+}
+
+.vsa_rev_thumb > div:nth-child(2) {
+    width: 100%;
 }
 
 /*-- /Section 2 - Main --*/
@@ -1192,7 +1280,7 @@
 }
 
 .vsa_footer_contacts_item h3 {
-    font-family: 'Inter';
+    font-family: 'Panton';
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -1207,7 +1295,7 @@
 }
 
 .vsa_footer_contacts_item p {
-    font-family: 'Inter';
+    font-family: 'RobotoRegular';
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -1217,7 +1305,7 @@
 }
 
 .vsa_footer_contacts_item p a {
-    font-family: 'Inter';
+    font-family: 'RobotoRegular';
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;

@@ -63,7 +63,7 @@
 /*------------------*/
 
 
-/*@font-face {
+@font-face {
     font-family: "RobotoRegular";
     src: url("fonts/RobotoRegular/RobotoRegular.eot");
     src: url("fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
@@ -72,11 +72,11 @@
     font-style: normal;
     font-weight: normal;
     font-display: swap;
-}*/
+}
 
 /* font-family: "RobotoLight"; */
 
-/*@font-face {
+@font-face {
     font-family: "RobotoLight";
     src: url("fonts/RobotoLight/RobotoLight.eot");
     src: url("fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
@@ -85,11 +85,11 @@
     font-style: normal;
     font-weight: normal;
     font-display: swap;
-}*/
+}
 
 /* font-family: "RobotoMedium"; */
 
-/*@font-face {
+@font-face {
     font-family: "RobotoMedium";
     src: url("fonts/RobotoMedium/RobotoMedium.eot");
     src: url("fonts/RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"),
@@ -98,11 +98,11 @@
     font-style: normal;
     font-weight: normal;
     font-display: swap;
-}*/
+}
 
 /* font-family: "RobotoBold"; */
 
-/*@font-face {
+@font-face {
     font-family: "RobotoBold";
     src: url("fonts/RobotoBold/RobotoBold.eot");
     src: url("fonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
@@ -111,9 +111,61 @@
     font-style: normal;
     font-weight: normal;
     font-display: swap;
-}*/
+}
 
 @font-face {
+    font-family: 'Panton';
+    src: url('fonts/Panton-Regular.eot');
+    src: url('fonts/Panton-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Panton-Regular.woff2') format('woff2'),
+        url('fonts/Panton-Regular.woff') format('woff'),
+        url('fonts/Panton-Regular.ttf') format('truetype'),
+        url('fonts/Panton-Regular.svg#Panton-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('fonts/Panton-SemiBold.eot');
+    src: url('fonts/Panton-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Panton-SemiBold.woff2') format('woff2'),
+        url('fonts/Panton-SemiBold.woff') format('woff'),
+        url('fonts/Panton-SemiBold.ttf') format('truetype'),
+        url('fonts/Panton-SemiBold.svg#Panton-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('fonts/Panton-Bold.eot');
+    src: url('fonts/Panton-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Panton-Bold.woff2') format('woff2'),
+        url('fonts/Panton-Bold.woff') format('woff'),
+        url('fonts/Panton-Bold.ttf') format('truetype'),
+        url('fonts/Panton-Bold.svg#Panton-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('fonts/Panton-Heavy.eot');
+    src: url('fonts/Panton-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Panton-Heavy.woff2') format('woff2'),
+        url('fonts/Panton-Heavy.woff') format('woff'),
+        url('fonts/Panton-Heavy.ttf') format('truetype'),
+        url('fonts/Panton-Heavy.svg#Panton-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*@font-face {
     font-family: 'Inter';
     src: url('fonts/Inter-Bold.eot');
     src: url('fonts/Inter-Bold.eot?#iefix') format('embedded-opentype'),
@@ -163,7 +215,7 @@
     font-weight: 600;
     font-style: normal;
     font-display: swap;
-}
+}*/
 
 /*-------------------------------------------*/
 /* BASIC SETUP */
@@ -470,7 +522,7 @@ textarea:focus {
 }
 
 .vsa_resp_nav li a {
-    font-family: 'Inter';
+    font-family: 'Panton';
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
@@ -522,6 +574,7 @@ textarea:focus {
     margin: -1px 0;
     padding: 1px 0;
     background: #000;
+    position: relative;
 }
 
 .vsa_line {
@@ -565,7 +618,7 @@ textarea:focus {
 }
 
 .vsa_line h3 {
-    font-family: 'Inter';
+    font-family: 'Panton';
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -588,7 +641,7 @@ textarea:focus {
     position: relative;
     right: 120%;
     animation: right 3s forwards;
-    animation-delay: 3s;
+    animation-delay: 2s;
 }
 
 @keyframes right {
@@ -598,6 +651,27 @@ textarea:focus {
 
 .vsa_line h3 span {
     font-weight: 400;
+}
+
+.vsa_line > div:last-child {
+    padding-left: 0;
+}
+
+.vsa_line > div:last-child h3 {
+    filter: blur(4px);
+    opacity: 0;
+}
+
+.vsa_line > div:last-child h3 {
+    filter: blur(4px);
+    opacity: 0;
+    animation: blur 2s forwards;
+    animation-delay: 5s;
+}
+
+@keyframes blur {
+  from {filter: blur(4px);opacity: 0;}
+  to {filter: blur(0);opacity: 1;}
 }
 
 .vsa_promo_slide:after {
@@ -709,7 +783,7 @@ textarea:focus {
 }
 
 .vsa_promo_slide_contant h1 {
-    font-family: 'Inter';
+    font-family: 'Panton';
     font-weight: 400;
     font-size: 64px;
     line-height: 86px;
@@ -773,10 +847,9 @@ textarea:focus {
     align-items: center;
     padding: 10px 34px;
     min-height: 52px;
-    background: rgba(255, 255, 255, .3);
+    background: rgba(255, 255, 255, .5);
     border: 1px solid #000;
-    backdrop-filter: blur(5px);
-    font-family: 'Inter';
+    font-family: "RobotoMedium";
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
@@ -864,7 +937,7 @@ textarea:focus {
 .vsa_lang_nav li:after {
     display: block;
     content: "/";
-    font-family: 'Inter';
+    font-family: "RobotoLight";
     font-weight: 300;
     font-size: 24px;
     line-height: 29px;
@@ -881,7 +954,7 @@ textarea:focus {
 }
 
 .vsa_lang_nav li a {
-    font-family: 'Inter';
+    font-family: "RobotoLight";
     font-weight: 300;
     font-size: 24px;
     line-height: 29px;
@@ -898,8 +971,7 @@ textarea:focus {
     display: block;
     width: 96px;
     height: 96px;
-    background-color: rgba(255, 255, 255, 0.01);
-    backdrop-filter: blur(5.13333px);
+    background-color: transparent;
     border-radius: 50%;
     border: none;
     background-image: url(img/scroll_down.svg);
@@ -910,6 +982,14 @@ textarea:focus {
     top: -29px;
     right: 25px;
     cursor: pointer;
+    animation: jump 2s infinite;
+    z-index: 5;
+}
+
+@keyframes jump {
+  0% {top: -29px;}
+  50% {top: 0;}
+  100% {top: -29px;}
 }
 
 .vsa_btns_wrapp_resp {
@@ -927,7 +1007,7 @@ textarea:focus {
 .vsa_h2_wrapp h3 {
     padding: 20px 0 20px 0;
     font-style: italic;
-    font-family: 'Inter';
+    font-family: 'Panton';
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
@@ -938,7 +1018,7 @@ textarea:focus {
 
 .vsa_h2_wrapp h2 {
     padding: 16px 0 16px 0;
-    font-family: 'Inter';
+    font-family: 'Panton';
     font-weight: 400;
     font-size: 48px;
     line-height: 58px;
@@ -956,7 +1036,7 @@ textarea:focus {
 .vsa_article_tree_cols > div:nth-child(1) {
     display: flex;
     width: 39%;
-    padding: 10px 10px 10px 0;
+    padding: 10px 15px 10px 0;
 }
 
 .vsa_article_tree_cols > div:nth-child(2) {
@@ -966,7 +1046,7 @@ textarea:focus {
 
 .vsa_article_tree_cols > div:nth-child(3) {
     width: 28%;
-    padding: 10px 0 10px 10px;
+    padding: 10px 0 10px 15px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -985,7 +1065,7 @@ textarea:focus {
 }
 
 .vsa_left_article_content p {
-    font-family: 'Inter';
+    font-family: "RobotoRegular";
     font-weight: 400;
     font-size: 20px;
     line-height: 22px;
@@ -999,15 +1079,15 @@ textarea:focus {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 10px 34px;
+    padding: 10px 34px 11px 34px;
     max-width: 406px;
     min-height: 52px;
     background: #000;
     border: none;
-    font-family: 'Inter';
+    font-family: "RobotoMedium";
     font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 23px;
     letter-spacing: -1px;
     text-transform: uppercase;
     color: #FFF;
@@ -1066,7 +1146,7 @@ textarea:focus {
 .vsa_thumb h3 {
     padding: 0 5px;
     position: relative;
-    font-family: 'Inter';
+    font-family: 'Panton';
     font-weight: 500;
     font-size: 48px;
     line-height: 52px;
@@ -1083,7 +1163,7 @@ textarea:focus {
 
 .vsa_thumb p {
     padding: 9px 0;
-    font-family: 'Inter';
+    font-family: "RobotoMedium";
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
@@ -1109,11 +1189,12 @@ textarea:focus {
 }
 
 .vsa_right_article p {
-    font-family: 'Inter';
+    font-family: "RobotoRegular";
     font-weight: 400;
     font-size: 20px;
     line-height: 22px;
     letter-spacing: -0.04em;
+    text-align: justify;
     color: #4E4E4E;
 }
 
@@ -1147,7 +1228,7 @@ textarea:focus {
 }
 
 .vsa_rev_thumb_title h3 {
-    font-family: 'Inter';
+    font-family: 'Panton';
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -1155,7 +1236,7 @@ textarea:focus {
 }
 
 .vsa_rev_thumb_val p {
-    font-family: 'Inter';
+    font-family: "RobotoBold";
     font-weight: 700;
     font-size: 32px;
     line-height: 39px;
@@ -1195,7 +1276,7 @@ textarea:focus {
 
 .vsa_rev_thumb_footer p {
     padding-top: 3px;
-    font-family: 'Inter';
+    font-family: "RobotoRegular";
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
@@ -1282,7 +1363,7 @@ textarea:focus {
 .vsa_photo_thumb h3 {
     position: relative;
     z-index: 3;
-    font-family: 'Inter';
+    font-family: 'Panton';
     font-weight: 600;
     font-size: 32px;
     line-height: 39px;
@@ -1328,7 +1409,7 @@ textarea:focus {
 }
 
 .vsa_item_num p {
-    font-family: 'Inter';
+    font-family: "RobotoRegular";
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -1337,14 +1418,44 @@ textarea:focus {
     color: #B0B0B0;
 }
 
+.h3_inline {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
 .vsa_item h3 {
-    font-family: 'Inter';
+    font-family: 'Panton';
     font-weight: 400;
     font-size: 32px;
     line-height: 39px;
     letter-spacing: -2px;
     text-transform: uppercase;
     color: #000;
+    transform: scale(1);
+    -webkit-transition-property: transform;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: transform;
+    -moz-transition-duration: 2s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: transform;
+    -ms-transition-duration: 2s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: transform;
+    -o-transition-duration: 2s;
+    -o-transition-timing-function: ease;
+
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+
+.vsa_item h3:hover {
+    transform: scale(1.2);
 }
 
 .vsa_item h3 span {
@@ -1352,12 +1463,36 @@ textarea:focus {
 }
 
 .vsa_item > div:nth-child(3) p {
-    font-family: 'Inter';
+    font-family: "RobotoRegular";
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
     text-align: justify;
-    color: #4E4E4E;
+    color: #484848;
+    opacity: .7;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: .5s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: opacity;
+    -moz-transition-duration: .5s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: opacity;
+    -ms-transition-duration: .5s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: opacity;
+    -o-transition-duration: .5s;
+    -o-transition-timing-function: ease;
+
+    transition-property: opacity;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+}
+
+.vsa_item > div:nth-child(3) p:hover {
+    opacity: 1;
 }
 
 /*-- /Section 3 - Promo --*/
@@ -1398,7 +1533,7 @@ textarea:focus {
 
 .vsa_article_2_content h2 {
     padding: 20px 0;
-    font-family: 'Inter';
+    font-family: 'Panton';
     font-weight: 500;
     font-size: 40px;
     line-height: 44px;
@@ -1407,11 +1542,10 @@ textarea:focus {
 
 .vsa_article_2_content p {
     padding: 20px 0;
-    font-family: 'Inter';
+    font-family: "RobotoRegular";
     font-weight: 400;
     font-size: 20px;
     line-height: 22px;
-    text-align: justify;
     letter-spacing: -0.04em;
     color: #FFF;
 }
@@ -1474,7 +1608,7 @@ textarea:focus {
 }
 
 .vsa_item_thumb_header h3 {
-    font-family: 'Inter';
+    font-family: 'Panton';
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
@@ -1484,7 +1618,7 @@ textarea:focus {
 }
 
 .vsa_item_thumb_header p {
-    font-family: 'Inter';
+    font-family: "RobotoRegular";
     font-weight: 400;
     font-style: italic;
     font-size: 16px;
@@ -1501,7 +1635,7 @@ textarea:focus {
 }
 
 .vsa_item_thumb_content p {
-    font-family: 'Inter';
+    font-family: "RobotoRegular";
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -1531,7 +1665,7 @@ textarea:focus {
 }
 
 .vsa_portfolio_box_header h3 {
-    font-family: 'Inter';
+    font-family: 'Panton';
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
@@ -1544,8 +1678,8 @@ textarea:focus {
     display: inline-block;
     vertical-align: top;
     margin-right: 40px;
-    border-bottom: 1px solid #000;
-    font-family: 'Inter';
+    border-bottom: none;
+    font-family: "RobotoMedium";
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
@@ -1553,35 +1687,46 @@ textarea:focus {
     text-transform: uppercase;
     color: #000;
     position: relative;
-    -webkit-transition-property: border;
+}
+
+.vsa_more_link span {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 5px;
+    transform: rotate(45deg);
+    -webkit-transition-property: transform;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
 
-    -moz-transition-property: border;
+    -moz-transition-property: transform;
     -moz-transition-duration: .3s;
     -moz-transition-timing-function: ease;
 
-    -ms-transition-property: border;
+    -ms-transition-property: transform;
     -ms-transition-duration: .3s;
     -ms-transition-timing-function: ease;
 
-    -o-transition-property: border;
+    -o-transition-property: transform;
     -o-transition-duration: .3s;
     -o-transition-timing-function: ease;
 
-    transition-property: border;
+    transition-property: transform;
     transition-duration: .3s;
     transition-timing-function: ease;
 }
 
-.vsa_more_link:hover {
-    border-bottom: 1px solid transparent;
+.vsa_more_link:hover span {
+    transform: rotate(0);
 }
 
-.vsa_more_link svg {
-    position: absolute;
-    top: 2px;
-    left: calc(100% - -13px);
+.vsa_more_link:hover svg {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.3);}
+  100% {transform: scale(1);}
 }
 
 .vsa_portfolio_slider {
@@ -1640,7 +1785,7 @@ textarea:focus {
 
 .vsa_h2_wrapp p {
     padding: 13px 0;
-    font-family: 'Inter';
+    font-family: "RobotoRegular";
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
@@ -1663,7 +1808,7 @@ textarea:focus {
 
 .vsa_prices_items > div:nth-child(1) {
     width: 50%;
-    padding: 19px 7px 10px 17px;
+    padding: 19px 7px 10px 0;
 }
 
 .vsa_prices_items > div:nth-child(2) {
@@ -1676,7 +1821,7 @@ textarea:focus {
 }
 
 .vsa_prices_items > div:nth-child(1) h3 {
-    font-family: 'Inter';
+    font-family: 'Panton';
     font-weight: 500;
     font-size: 40px;
     line-height: 44px;
@@ -1706,7 +1851,7 @@ textarea:focus {
 
 .vsa_price_text h3 {
     padding-bottom: 15px;
-    font-family: 'Inter';
+    font-family: 'Panton';
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
@@ -1716,7 +1861,7 @@ textarea:focus {
 }
 
 .vsa_price_text p {
-    font-family: 'Inter';
+    font-family: "RobotoRegular";
     font-weight: 400;
     font-size: 20px;
     line-height: 22px;
@@ -1731,7 +1876,7 @@ textarea:focus {
 }
 
 .vsa_price_val h3 {    
-    font-family: 'Inter';
+    font-family: 'Panton';
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
@@ -1747,8 +1892,8 @@ textarea:focus {
 }
 
 .vsa_price_val p {
-    font-family: 'Inter';
-    font-weight: 600;
+    font-family: "RobotoMedium";
+    font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: -0.04em;
@@ -1794,7 +1939,7 @@ textarea:focus {
 
 .vsa_contacts_form_title h3 {
     padding: 5px 0;
-    font-family: 'Inter';
+    font-family: 'Panton';
     font-weight: 500;
     font-size: 40px;
     line-height: 44px;
@@ -1803,7 +1948,7 @@ textarea:focus {
 
 .vsa_contacts_form_title p {
     padding: 5px 0;
-    font-family: 'Inter';
+    font-family: "RobotoRegular";
     font-weight: 400;
     font-size: 20px;
     line-height: 22px;
@@ -1819,7 +1964,7 @@ textarea:focus {
     background: transparent;
     border: none;
     border-bottom: 1px solid #4E4E4E;
-    font-family: 'Inter';
+    font-family: "RobotoRegular";
     font-weight: 400;
     font-size: 16px;
     line-height: 67px;
@@ -1836,7 +1981,7 @@ textarea:focus {
 }
 
 .vsa_contacts_form_text p {
-    font-family: 'Inter';
+    font-family: "RobotoRegular";
     font-weight: 400;
     font-size: 15px;
     line-height: 18px;
@@ -1934,7 +2079,7 @@ textarea:focus {
 
 .vsa_news_thumb_content h3 {
     padding-bottom: 10px;
-    font-family: 'Inter';
+    font-family: 'Panton';
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
@@ -1942,7 +2087,7 @@ textarea:focus {
 }
 
 .vsa_news_thumb_content p {
-    font-family: 'Inter';
+    font-family: "RobotoRegular";
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -1956,7 +2101,6 @@ textarea:focus {
 /*-------------------------------------------*/
 
 .footer_section {
-    border: 2px solid #000;
     padding: 27px 0 0 0;
 }
 
@@ -1972,12 +2116,13 @@ textarea:focus {
 
 .vsa_footer_top_row > div:nth-child(2) {
     width: calc(100% - 150px);
-    padding: 10px 10px 0 10px;
+    padding: 0 10px 0 10px;
 }
 
 .vsa_footer_logo {
     display: inline-block;
     vertical-align: top;
+    width: 60px;
 }
 
 .vsa_footer_logo img {
@@ -1999,7 +2144,7 @@ textarea:focus {
 }
 
 .vsa_footer_nav li a {
-    font-family: 'Inter';
+    font-family: 'Panton';
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
@@ -2060,7 +2205,7 @@ textarea:focus {
 
 .vsa_text_box p {
     padding: 10px 0;
-    font-family: 'Inter';
+    font-family: "RobotoRegular";
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -2070,7 +2215,7 @@ textarea:focus {
 }
 
 .vsa_text_box p a {
-    font-family: 'Inter';
+    font-family: "RobotoRegular";
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -2105,7 +2250,7 @@ textarea:focus {
 
 .vsa_subscribe_desc p {
     padding: 10px 0;
-    font-family: 'Inter';
+    font-family: "RobotoRegular";
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -2135,7 +2280,7 @@ textarea:focus {
     padding: 0 20px;
     border: none;
     background: transparent;
-    font-family: 'Inter';
+    font-family: "RobotoRegular";
     font-weight: 400;
     font-size: 16px;
     line-height: 47px;
@@ -2155,7 +2300,7 @@ textarea:focus {
 }
 
 .vsa_corp p {
-    font-family: 'Inter';
+    font-family: "RobotoMedium";
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
