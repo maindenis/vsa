@@ -736,8 +736,10 @@ textarea:focus {
 }
 
 .vsa_promo_slide .vsa_row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-height: 100vh;
-    padding-top: 328px;
     position: relative;
     z-index: 3;
 }
@@ -747,7 +749,7 @@ textarea:focus {
 }
 
 .vsa_promo_slide_contant {
-    padding-top: 38px;
+    padding-top: 30px;
     text-align: center;
     opacity: 0;
     transform: scale(.8);
@@ -1375,6 +1377,30 @@ textarea:focus {
     bottom: 50px;
     right: 40px;
     z-index: 3;
+    transform: rotate(0);
+    -webkit-transition-property: transform;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: transform;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: transform;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: transform;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: transform;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.vsa_photo_thumb:hover svg {
+    transform: rotate(-45deg);
 }
 
 /*-- /Section 2 - Promo --*/
@@ -1432,6 +1458,7 @@ textarea:focus {
     letter-spacing: -2px;
     text-transform: uppercase;
     color: #000;
+    text-align: left;
     transform: scale(1);
     -webkit-transition-property: transform;
     -webkit-transition-duration: 2s;
@@ -1572,9 +1599,10 @@ textarea:focus {
     flex-direction: column;
     width: 420px;
     height: 420px;
-    margin: 10px 0;
+    margin: 10px auto;
     padding: 29px 40px 40px 40px;
     position: relative;
+    direction: ltr;
 }
 
 .vsa_item_thumb_bg {
@@ -2290,6 +2318,7 @@ textarea:focus {
 
 .vsa_subscribe_form .vsa_black_pill {
     width: 100%;
+    max-width: 100%;
     min-height: 49px;
     position: relative;
     right: -1px;

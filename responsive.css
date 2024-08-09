@@ -6,9 +6,9 @@
     height: 236px;
 }
 
-.vsa_promo_slide .vsa_row {
+/*.vsa_promo_slide .vsa_row {
     padding-top: 231px;
-}
+}*/
 
 /*-- /Section 1 - Promo --*/
 
@@ -60,9 +60,9 @@
     height: 185px;
 }
 
-.vsa_promo_slide .vsa_row {
+/*.vsa_promo_slide .vsa_row {
     padding-top: 189px;
-}
+}*/
 
 .vsa_promo_slide_contant h1 {
     font-size: 43px;
@@ -917,6 +917,18 @@
     }
 }
 
+.vsa_promo {
+    min-height: calc(100vh - 50px) !important;
+}
+
+.vsa_promo_slide {
+    min-height: calc(100vh - 50px) !important;
+}
+
+.vsa_promo_slide .vsa_row {
+    min-height: calc(100vh - 50px) !important;
+}
+
 /*-- /Section 1 - Promo --*/
 
 /*-- Section 2 - Main --*/
@@ -948,7 +960,19 @@
     width: 100%;
 }
 
+.vsa_thumb h3 {
+    letter-spacing: -1px;
+}
+
 /*-- /Section 2 - Main --*/
+
+/*-- Section 3 - Main --*/
+
+.vsa_item h3 {
+    letter-spacing: 0;
+}
+
+/*-- /Section 3 - Main --*/
 
 /*-- Section 4 - Main --*/
 
@@ -1104,12 +1128,12 @@
 
 .vsa_item > div:nth-child(2) {
     width: 100%;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 0 10px 0;
 }
 
 .vsa_item > div:nth-child(3) {
     width: 100%;
-    padding: 5px 10px 10px 10px;
+    padding: 5px 0 10px 0;
 }
 
 /*-- /Section 3 - Main --*/
@@ -1127,7 +1151,7 @@
 }
 
 .vsa_more_link {
-    margin-right: 32px;
+    margin-right: 0;
     font-size: 16px;
     line-height: 19px;
 }
@@ -1186,11 +1210,12 @@
 }
 
 .vsa_price_val p {
+    font-family: 'Panton';
     padding-left: 10px;
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
-    color: #000;
+    color: #B0B0B0;
 }
 
 /*-- /Section 6 - Main --*/
@@ -1343,7 +1368,7 @@
 }
 
 .vsa_subscribe_box {
-    max-width: 336px;
+    max-width: 100%;
 }
 
 .vsa_subscribe_form {
@@ -1388,12 +1413,12 @@
 /*-- Section 1 - Promo --*/
 
 .vsa_line > div {
-    height: 250px;
+    height: 200px;
 }
 
 .vsa_promo_slide_contant {
-    padding-top: 87px;
-    text-align: left;
+    padding-top: 37px;
+    text-align: center;
 }
 
 .vsa_promo_slide_contant h1 span {
@@ -1402,15 +1427,15 @@
 
 .vsa_btns_wrapp_resp {
     padding-top: 45px;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .vsa_line {
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .vsa_line > div {
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 /*-- /Section 1 - Promo --*/
