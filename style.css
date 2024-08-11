@@ -84,7 +84,7 @@
     url("fonts/RobotoLight/RobotoLight.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
-    font-display: swap;
+/*    font-display: swap;*/
 }
 
 /* font-family: "RobotoMedium"; */
@@ -97,7 +97,7 @@
     url("fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
-    font-display: swap;
+/*    font-display: swap;*/
 }
 
 /* font-family: "RobotoBold"; */
@@ -110,7 +110,7 @@
     url("fonts/RobotoBold/RobotoBold.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
-    font-display: swap;
+/*    font-display: swap;*/
 }
 
 @font-face {
@@ -123,7 +123,7 @@
         url('fonts/Panton-Regular.svg#Panton-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
+/*    font-display: swap;*/
 }
 
 @font-face {
@@ -136,7 +136,7 @@
         url('fonts/Panton-SemiBold.svg#Panton-SemiBold') format('svg');
     font-weight: 600;
     font-style: normal;
-    font-display: swap;
+/*    font-display: swap;*/
 }
 
 @font-face {
@@ -149,7 +149,7 @@
         url('fonts/Panton-Bold.svg#Panton-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
-    font-display: swap;
+/*    font-display: swap;*/
 }
 
 @font-face {
@@ -162,7 +162,7 @@
         url('fonts/Panton-Heavy.svg#Panton-Heavy') format('svg');
     font-weight: 900;
     font-style: normal;
-    font-display: swap;
+/*    font-display: swap;*/
 }
 
 /*@font-face {
@@ -1146,6 +1146,8 @@ textarea:focus {
 }
 
 .vsa_thumb h3 {
+    display: inline-block;
+    vertical-align: top;
     padding: 0 5px;
     position: relative;
     font-family: 'Panton';
@@ -1157,10 +1159,10 @@ textarea:focus {
 }
 
 .vsa_thumb h3 sup {
-    font-size: 29px;
+    font-size: 26px;
     position: absolute;
-    top: -11px;
-    right: -4px;
+    top: -8px;
+    right: -13px;
 }
 
 .vsa_thumb p {

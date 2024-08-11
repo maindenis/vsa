@@ -156,6 +156,55 @@ $(document).ready(function() {
     }
 
     if($('.vsa_items_slider').length > 0) {
+
+    initVSAItemsSlider();
+
+    $(window).resize(function() {
+        $('.vsa_items_slider').trigger('destroy.owl.carousel');
+        initVSAItemsSlider();
+    });
+
+    function initVSAItemsSlider() {
+        $('.vsa_items_slider').owlCarousel({
+            loop:true,
+            margin:30,
+            nav:false,
+            autoplay:true,
+            smartSpeed:1000,
+            autoplayTimeout:2500,
+            autoplayHoverPause:true,
+            lazyLoadEager: 3,
+            video: false,
+            dots: false,
+            autoWidth:true,
+            items:1,
+            responsiveClass:false,
+            // onResized: owlres,
+            responsive:{
+                0:{
+                    margin:20,
+                    dots: true,
+                    rtl: true,
+                    autoWidth:false,
+                    items:1,
+                },
+                450:{
+                    margin:20,
+                    dots: true,
+                    rtl: true,
+                    autoWidth:true,
+                    items:1,
+                },
+                900:{
+                    margin:30,
+                    dots: false,
+                    rtl: false,
+                    autoWidth:true,
+                    items:1,
+                }
+            }
+        });
+    }
      $('.vsa_items_slider').owlCarousel({
         loop:true,
         margin:30,
@@ -170,6 +219,7 @@ $(document).ready(function() {
         autoWidth:true,
         items:1,
         responsiveClass:false,
+        // onResized: owlres,
         responsive:{
         0:{
             margin:20,
@@ -194,6 +244,12 @@ $(document).ready(function() {
         }
     }
     });
+
+    // function owlres() {
+    //     $('.vsa_items_slider').trigger('resize.owl.carousel');
+    //     $('.vsa_items_slider').trigger('refresh.owl.carousel');
+    //     // console.log('owlres');
+    // }
     }
 
     if($('.vsa_portfolio_slider').length > 0) {
